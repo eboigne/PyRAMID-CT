@@ -9,7 +9,7 @@ A Python code to Remove Motion Artifacts In Dynamic Computed Tomography.
 
 # Current features
 
-- Piecewise linear interpolation in time to augment time resolution by factor $M$ and reduce motion artifact in CT.
+- Piecewise Linear Interpolation (PLI) in time to augment time resolution by factor a of M and reduce motion artifact in CT.
 - Use parallel CT forward and backward projectors from the [ASTRA Toolbox](https://github.com/astra-toolbox/astra-toolbox) (PyRAMID-CT currently only supports parallel beam geometries).
 - Calculations on single or double precision, on GPU or CPU.
 - 3D+time regularization using Total Variation (TV) from [PyTV-4D](https://github.com/eboigne/PyTV-4D).

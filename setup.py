@@ -54,7 +54,7 @@ requirements = [
     'tifffile',
     'astra-toolbox',
     'python>=3.5',
-	'torch>=1.5.0',
+    'pytorch>=1.5.0',
 ]
 
 # Read version from __init__.py (See: https://packaging.python.org/en/latest/guides/single-sourcing-package-version/)
