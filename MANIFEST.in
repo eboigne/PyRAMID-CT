@@ -1,0 +1,5 @@
+include pyramid_ct/media/phantom_mask_static.tif
+include pyramid_ct/media/sino_phantom_motionType0.tif
+include pyramid_ct/media/sino_phantom_motionType1.tif
+include pyramid_ct/media/sino_phantom_motionType2.tif
+include pyramid_ct/media/sino_phantom_motionType3.tif

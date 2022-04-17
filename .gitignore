@@ -1,0 +1,5 @@
+.pytest_cache
+.ipynb_checkpoints
+.cache
+__pycache__
+.idea

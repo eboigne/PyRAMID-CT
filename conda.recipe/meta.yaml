@@ -1,0 +1,87 @@
+# /*-----------------------------------------------------------------------*\
+# |                                                                         |
+# |                                 ++                                      |
+# |                               +====+                                    |
+# |                            +==========+                                 |
+# |                         +================+                              |
+# |                      +======================+                           |
+# |                   +============================+                        |
+# |                +==================================+                     |
+# |             +========================================+                  |
+# |             |  PyRAMID-CT: DYNAMIC CT RECONSTRUCTION |                  |
+# |             +========================================+                  |
+# |                                                                         |
+# |                                                                         |
+# |   Author: Emeric Boigné                                                 |
+# |                                                                         |
+# |   Contact: Emeric Boigné                                                |
+# |   email: emericboigne@gmail.com                                         |
+# |   Department of Mechanical Engineering                                  |
+# |   Stanford University                                                   |
+# |   488 Escondido Mall, Stanford, CA 94305, USA                           |
+# |                                                                         |
+# |-------------------------------------------------------------------------|
+# |                                                                         |
+# |   This file is part of the PyRAMID-CT package.                          |
+# |                                                                         |
+# |   License                                                               |
+# |                                                                         |
+# |   Copyright(C) 2021 E. Boigné                                           |
+# |   PyRAMID-CT is free software: you can redistribute it and/or modify    |
+# |   it under the terms of the GNU General Public License as published by  |
+# |   the Free Software Foundation, either version 3 of the License, or     |
+# |   (at your option) any later version.                                   |
+# |                                                                         |
+# |   PyRAMID-CT is distributed in the hope that it will be useful,         |
+# |   but WITHOUT ANY WARRANTY; without even the implied warranty of        |
+# |   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         |
+# |   GNU General Public License for more details.                          |
+# |                                                                         |
+# |   You should have received a copy of the GNU General Public License     |
+# |   along with PyRAMID-CT. If not, see <http://www.gnu.org/licenses/>.    |
+# |                                                                         |
+# /*-----------------------------------------------------------------------*/
+
+{% set data = load_setup_py_data() %}
+
+package:
+  name: pyramid_ct
+  version: {{ data['version'] }}
+
+source:
+  path: ..
+
+build:
+  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed -vv .
+  noarch: python
+
+  # entry_points:
+  #   {% for entry in data['entry_points']['console_scripts'] %}
+  #     - {{ entry.split('=')[0].strip() }} = {{ entry.split('=')[1].strip() }}
+  #   {% endfor %}
+
+requirements:
+  host:
+    - python
+    - pip
+  run:
+    - python
+    # dependencies are defined in setup.py
+    {% for dep in data['install_requires'] %}
+    - {{ dep.lower() }}
+    {% endfor %}
+
+#test:
+#  source_files: # Location of tests files
+#    - tests
+#  requires: # Added dependencies on top of requirements:run ones
+#    - pytest
+#    - pytest-cov
+#   commands: # Commands ran to test.
+#     - pytest # The pytest program will run all files *_test. py and test_*.py
+
+about:
+  home: https://github.com/eboigne/PyRAMID
+  summary: A Python code to Remove Motion Artifacts In Dynamic Computed Tomography.
+  license: {{ data.get('license') }}
+  license_file: LICENSE
