@@ -81,7 +81,7 @@ requirements:
 #     - pytest # The pytest program will run all files *_test. py and test_*.py
 
 about:
-  home: https://github.com/eboigne/PyRAMID
+  home: https://github.com/eboigne/PyRAMID-CT
   summary: A Python code to Remove Motion Artifacts In Dynamic Computed Tomography.
   license: {{ data.get('license') }}
   license_file: LICENSE

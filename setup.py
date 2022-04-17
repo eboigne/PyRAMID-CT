@@ -78,7 +78,7 @@ setup(
     license='GNUv3',
     author='Emeric Boigné',
     author_email='emericboigne@gmail.com',
-    url='https://github.com/eboigne/PyRAMID',
+    url='https://github.com/eboigne/PyRAMID-CT',
     packages=['pyramid_ct'],
     install_requires=requirements,
     include_package_data=True, # With this, the non .py files specified in MANIFEST.in are included
