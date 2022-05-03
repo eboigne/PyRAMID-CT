@@ -4,8 +4,7 @@ A Python code to Remove Motion Artifacts In Dynamic Computed Tomography.
 - [Current features](#current-features)
 - [Installation](#installation)
 - [Getting started](#getting-started)
-
-
+- [Cite](#cite)
 
 # Current features
 
@@ -66,4 +65,18 @@ See the [getting started Jupyter notebook](https://github.com/eboigne/PyRAMID-CT
 ### Reading output data
 The reconstructed data is written in images slices written in .tif format. [Fiji](https://imagej.net/software/fiji/) is recommended for post-processing the reconstructed CT datasets. These .tif stacks can be easily read in Fiji by drag and dropping the stack folder.
 
+# Cite
+Please refer to the following article in your publications if you use PyRAMID-CT for your research:
+```
+@article{boigne2022towards,
+  title={{Towards data-informed motion artifact reduction in quantitative CT using piecewise linear interpolation}},
+  author={Boign\'e, Emeric and Parkinson, Dilworth Y. and Ihme, Matthias},
+  journal={Under review},
+  year={2022}
+}
+```
+
+# License
+
+PyRAMID-CT is open source under the GPLv3 license.
 
