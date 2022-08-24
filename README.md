@@ -19,11 +19,11 @@ A Python code to Remove Motion Artifacts In Dynamic Computed Tomography.
 
 ### Conda [Recommended]
 
-One line installation that takes care of dependencies:
+The recommended setup is to use a new conda environment with python 3.7. Use the below one-line install that takes care of dependencies (if the dependency solve is slow with conda, checkout [mamba](https://mamba.readthedocs.io/)): 
 
 `conda install -c conda-forge -c pytorch -c astra-toolbox/label/dev -c eboigne pyramid_ct`
 
-If the dependency solve is slow with conda, checkout [mamba](https://mamba.readthedocs.io/). Once installed, you can run some basic tests in python:
+Once installed, you can run some basic tests in python:
 
 ```python
 import pyramid_ct
@@ -31,16 +31,14 @@ import pyramid_ct
 pyramid_ct.run_tests()
 ```
 
-If you're having trouble with PyTorch running on GPU: install PyTorch first manually following the guidelines [on the official website](https://pytorch.org/). Make sure that a GPU version of PyTorch is installed and that `cudatoolkit<=10.2`, as required by the ASTRA Toolbox. Thus, the installation of PyTorch should be similar to:
+If you're having trouble with PyTorch running on GPU: install PyTorch first manually following the guidelines [on the official website](https://pytorch.org/). Make sure that a GPU version of PyTorch is installed. The installation of PyTorch should be similar to:
 
-`conda install -c pytorch cudatoolkit=10.2 pytorch`
+`conda install -c pytorch cudatoolkit=11.3 pytorch`
 
 ### Manual installation
 PyRAMID-CT can also be installed manually by cloning the repo locally and installing with (dependencies need to be set properly):
 
 `python setup.py install`
-
-Note that the ASTRA-Toolbox requires `cudatoolkit=10.2` which may require an older version of PyTorch for compatibility.
 
 # Getting started
 
