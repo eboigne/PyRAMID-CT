@@ -67,10 +67,13 @@ The reconstructed data is written in images slices written in .tif format. [Fiji
 Please refer to the following article in your publications if you use PyRAMID-CT for your research:
 ```
 @article{boigne2022towards,
-  title={{Towards data-informed motion artifact reduction in quantitative CT using piecewise linear interpolation}},
-  author={Boign\'e, Emeric and Parkinson, Dilworth Y. and Ihme, Matthias},
-  journal={Under review},
-  year={2022}
+author={Boign{\'e}, Emeric and Parkinson, Dilworth Y. and Ihme, Matthias},
+journal={{IEEE Transactions on Computational Imaging}},
+title={{Towards data-informed motion artifact reduction in quantitative CT using piecewise linear interpolation}},
+year={2022},
+volume={8},
+pages={917-932},
+doi={10.1109/TCI.2022.3215096}
 }
 ```
 
