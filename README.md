@@ -1,5 +1,5 @@
 # PyRAMID-CT
-A Python code to Remove Motion Artifacts In Dynamic Computed Tomography. 
+A Python code to Remove Motion Artifacts In Dynamic Computed Tomography. This is the code used in [this article](http://dx.doi.org/10.1109/TCI.2022.3215096).
 
 - [Current features](#current-features)
 - [Installation](#installation)
